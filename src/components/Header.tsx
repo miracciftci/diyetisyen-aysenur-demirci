@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             <li><button onClick={() => scrollToSection('home')}>Ana Sayfa</button></li>
             <li><button onClick={() => scrollToSection('services')}>Hizmetlerim</button></li>
             <li><button onClick={() => scrollToSection('certificates')}>Sertifikalarım</button></li>
-            <li><button onClick={scrollToContactForm} className="contact-button">Randevu Formu</button></li>
+            <li><button onClick={scrollToContactForm} className="contact-button">İletişim</button></li>
           </ul>
         </nav>
 

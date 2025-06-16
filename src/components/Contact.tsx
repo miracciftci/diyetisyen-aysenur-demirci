@@ -62,6 +62,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
+        <br/>
         <div className="contact-content">
           <div className="contact-info">
             <h2>İletişim</h2>
