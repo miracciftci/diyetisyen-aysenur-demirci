@@ -188,6 +188,7 @@
 @media (max-width: 768px) {
   .certificates {
     padding: 3rem 0;
+    margin-top: 20px;
   }
 
   .certificates-container {
@@ -232,6 +233,10 @@
 }
 
 @media (max-width: 480px) {
+  .certificates {
+    margin-top: 15px;
+  }
+
   .certificates-grid {
     grid-template-columns: 1fr;
     gap: 1rem;

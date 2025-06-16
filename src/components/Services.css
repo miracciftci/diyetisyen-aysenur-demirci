@@ -151,6 +151,7 @@
 @media (max-width: 768px) {
   .services {
     padding: 3rem 0;
+    margin-top: 20px;
   }
 
   .services-container {
@@ -180,5 +181,11 @@
 
   .service-card h3 {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    margin-top: 15px;
   }
 } 

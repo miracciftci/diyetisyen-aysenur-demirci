@@ -380,6 +380,7 @@
 @media (max-width: 768px) {
   .contact {
     padding: 3rem 0;
+    margin-top: 20px;
   }
 
   .contact-container {
@@ -399,13 +400,11 @@
   }
 
   .contact-icon {
-    width: 50px;
-    height: 50px;
     font-size: 1.5rem;
   }
 
   .contact-form-section {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
   }
 
   .contact-form-section h3 {
@@ -415,17 +414,14 @@
   .form-group input,
   .form-group textarea {
     padding: 0.8rem;
-    font-size: 0.95rem;
   }
 
   .submit-button {
     padding: 0.8rem 1.5rem;
-    font-size: 1rem;
   }
 
   .success-modal {
-    width: 95%;
-    margin: 1rem;
+    max-width: 350px;
   }
 
   .success-modal-content {
@@ -446,6 +442,11 @@
 
   .success-modal-button {
     padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    margin-top: 15px;
   }
 } 

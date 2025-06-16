@@ -214,7 +214,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .hero-container {
@@ -260,5 +260,11 @@
 
   .placeholder-hint {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 70px;
   }
 } 
