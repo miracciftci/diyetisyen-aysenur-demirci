@@ -39,9 +39,8 @@
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.3rem;
   flex-grow: 1;
-  justify-content: space-between;
 }
 
 .contact-item {
@@ -106,7 +105,20 @@
   font-weight: 600;
 }
 
+.youtube-link {
+  background: linear-gradient(45deg, #c00a0a 0%, #ff6b6b 25%, #ff5252 50%, #b47575 75%, #977171 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
 .instagram-link:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.youtube-link:hover {
   transform: scale(1.05);
   text-decoration: none;
 }
@@ -357,6 +369,43 @@
   transform: translateY(0);
 }
 
+.contact-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-social-button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  transition: all 0.3s ease;
+  min-width: 110px;
+  max-width: 170px;
+  color: white;
+}
+
+.contact-social-button.instagram {
+  background: linear-gradient(135deg, #e4405f, #f77737);
+}
+
+.contact-social-button.youtube {
+  background: linear-gradient(135deg, #bdbdbd 0%, #ff0000 100%);
+}
+
+.contact-social-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 @media (max-width: 968px) {
   .contact-content {
     grid-template-columns: 1fr;
@@ -442,6 +491,15 @@
 
   .success-modal-button {
     padding: 0.7rem 1.5rem;
+  }
+
+  .contact-social-button,
+  .contact-social-button.instagram,
+  .contact-social-button.youtube {
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    min-width: 90px;
+    max-width: 120px;
+    font-size: 0.9rem;
   }
 }
 

@@ -45,15 +45,21 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="social-button instagram"
               >
-                <span className="social-icon">📷</span>
+                <span className="social-icon">
+                  <img src="/images/Instagram_logo.png" alt="Instagram" style={{width: 20, height: 20, objectFit: 'contain'}} />
+                </span>
                 Instagram
               </a>
               <a 
-                href="mailto:ayse.nur.demirci@outlook.com" 
-                className="social-button email"
+                href="https://www.youtube.com/@aise.demirci" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-button youtube"
               >
-                <span className="social-icon">✉️</span>
-                Email
+                <span className="social-icon">
+                  <img src="/images/Youtube_logo.png" alt="YouTube" style={{width: 20, height: 20, objectFit: 'contain'}} />
+                </span>
+                YouTube
               </a>
             </div>
           </div>

@@ -65,22 +65,14 @@ const Contact: React.FC = () => {
         <br/>
         <div className="contact-content">
           <div className="contact-info">
-            <h2>İletişim</h2>
+            <h2>İletişim ve Sosyal Medya</h2>
             <p>Sağlıklı yaşam yolculuğunuzda size yardımcı olmak için buradayım</p>
             
             <div className="contact-details">
               <div className="contact-item">
-                <div className="contact-icon">📧</div>
-                <div>
-                  <h4>E-Posta</h4>
-                  <a href="mailto:ayse.nur.demirci@outlook.com" className="contact-link">
-                    ayse.nur.demirci@outlook.com
-                  </a>
+                <div className="contact-icon">
+                  <img src="/images/Instagram_logo.png" alt="Instagram" style={{width: 24, height: 24, objectFit: 'contain'}} />
                 </div>
-              </div>
-              
-              <div className="contact-item">
-                <div className="contact-icon">📱</div>
                 <div>
                   <h4>Instagram</h4>
                   <a 
@@ -93,7 +85,31 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
               </div>
-              
+              <div className="contact-item">
+                <div className="contact-icon">
+                  <img src="/images/Youtube_logo.png" alt="YouTube" style={{width: 24, height: 24, objectFit: 'contain'}} />
+                </div>
+                <div>
+                  <h4>YouTube</h4>
+                  <a 
+                    href="https://www.youtube.com/@aise.demirci" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="contact-link youtube-link"
+                  >
+                    @aise.demirci
+                  </a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <div className="contact-icon">📧</div>
+                <div>
+                  <h4>E-Posta</h4>
+                  <a href="mailto:ayse.nur.demirci@outlook.com" className="contact-link">
+                    ayse.nur.demirci@outlook.com
+                  </a>
+                </div>
+              </div>
               <div className="contact-item">
                 <div className="contact-icon">📞</div>
                 <div>
@@ -101,14 +117,6 @@ const Contact: React.FC = () => {
                   <a href="tel:+905551234567" className="contact-link">
                     +90 543 122 55 32
                   </a>
-                </div>
-              </div>
-              
-              <div className="contact-item">
-                <div className="contact-icon">📍</div>
-                <div>
-                  <h4>Adres</h4>
-                  <p>Online Danışmanlık Hizmeti</p>
                 </div>
               </div>
             </div>
@@ -206,4 +214,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
