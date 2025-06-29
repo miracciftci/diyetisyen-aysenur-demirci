@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import './VideoSection.css';
 
 const advantages = [
@@ -32,62 +32,37 @@ const advantages = [
     title: 'Düzenli Vücut Analizleri',
     desc: 'Gelişimini rakamlarla takip edip süreci analiz ederiz.'
   },
+  {
+    icon: '📱',
+    title: 'Kolay ve Hızlı İletişim',
+    desc: 'WhatsApp, telefon veya e-posta ile hızlı geri dönüş garantisi.'
+  },
+  {
+    icon: '🧠',
+    title: ' Psikolojik Destek Yaklaşımı',
+    desc: 'Yeme alışkanlıklarını anlamaya yönelik danışmanlık.'
+  },
+  {
+    icon: '📅',
+    title: 'Kısa Vadeli Değil, Kalıcı Sonuçlar',
+    desc: 'Hızlı çözümler değil, uzun vadeli başarı odaklıyım.'
+  },
 ];
 
 const VideoSection: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        videoRef.current.play();
-        setIsPlaying(true);
-      }
-    }
-  };
-
-  const handleEnded = () => {
-    setIsPlaying(false);
-  };
-
   return (
     <section className="video-section" id="nedenben" style={{ scrollMarginTop: '40px' }}>
-      <div className="video-section-grid">
-        <div className="video-advantages">
-          <h2>Neden Beni Tercih Etmelisiniz?</h2>
-          <ul>
-            {advantages.map((item, idx) => (
-              <li key={idx}>
-                <span className="adv-icon">{item.icon}</span>
-                <span className="adv-title">{item.title}</span>
-                <span className="adv-desc">{item.desc}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="video-side">
-          <div className={`video-wrapper${isPlaying ? ' playing' : ''}`} onClick={handleVideoClick}>
-            <video
-              ref={videoRef}
-              src="/videos/tanıtım.mp4"
-              poster="/images/tanitim-poster.png"
-              onEnded={handleEnded}
-              tabIndex={0}
-            />
-            {!isPlaying && (
-              <button className="play-button" aria-label="Videoyu Oynat">
-                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                  <circle cx="30" cy="30" r="30" fill="rgba(44,85,48,0.85)"/>
-                  <polygon points="25,20 45,30 25,40" fill="#fff"/>
-                </svg>
-              </button>
-            )}
+      <h2 className="nedenben-title">Neden Beni Tercih Etmelisiniz?</h2>
+      <div className="nedenben-cards">
+        {advantages.map((item, idx) => (
+          <div key={idx} className="nedenben-card">
+            <span className="nedenben-card-icon">{item.icon}</span>
+            <div className="nedenben-card-content">
+              <div className="nedenben-card-title">{item.title}</div>
+              <div className="nedenben-card-desc">{item.desc}</div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
