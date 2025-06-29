@@ -24,6 +24,14 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToNedenBen = () => {
+    const section = document.getElementById('nedenben');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -35,7 +43,7 @@ const Header: React.FC = () => {
           <ul>
             <li><button onClick={() => scrollToSection('home')}>Ana Sayfa</button></li>
             <li><button onClick={() => scrollToSection('services')}>Hizmetlerim</button></li>
-            <li><button onClick={() => scrollToSection('certificates')}>Sertifikalarım</button></li>
+            <li><button onClick={scrollToNedenBen}>Neden Ben?</button></li>
             <li><button onClick={scrollToContactForm} className="contact-button">İletişim</button></li>
           </ul>
         </nav>

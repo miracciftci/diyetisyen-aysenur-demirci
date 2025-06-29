@@ -87,6 +87,17 @@ const Contact: React.FC = () => {
               </div>
               <div className="contact-item">
                 <div className="contact-icon">
+                  <img src="/images/WhatsApp_logo.png" alt="WhatsApp" style={{width: 24, height: 24, objectFit: 'contain'}} />
+                </div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <a href="https://wa.me/905431225532" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    +90 543 122 55 32
+                  </a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <div className="contact-icon">
                   <img src="/images/Youtube_logo.png" alt="YouTube" style={{width: 24, height: 24, objectFit: 'contain'}} />
                 </div>
                 <div>
@@ -107,15 +118,6 @@ const Contact: React.FC = () => {
                   <h4>E-Posta</h4>
                   <a href="mailto:ayse.nur.demirci@outlook.com" className="contact-link">
                     ayse.nur.demirci@outlook.com
-                  </a>
-                </div>
-              </div>
-              <div className="contact-item">
-                <div className="contact-icon">📞</div>
-                <div>
-                  <h4>Telefon</h4>
-                  <a href="tel:+905551234567" className="contact-link">
-                    +90 543 122 55 32
                   </a>
                 </div>
               </div>
