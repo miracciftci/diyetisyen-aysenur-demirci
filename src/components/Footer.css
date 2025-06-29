@@ -103,8 +103,17 @@
   overflow: hidden;
 }
 
+.social-button.whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #ffffff 50%, #25d366 100%);
+  color: #185a30;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+
 .social-button.instagram,
-.social-button.youtube {
+.social-button.youtube,
+.social-button.whatsapp {
   padding: 0.6rem 1rem 0.6rem 1rem;
   min-width: 110px;
   max-width: 170px;
@@ -113,6 +122,16 @@
 .social-button.instagram:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 15px rgba(228, 64, 95, 0.3);
+}
+
+.social-button.youtube:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
+}
+
+.social-button.whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(37, 211, 102, 0.3);
 }
 
 .social-button.email {

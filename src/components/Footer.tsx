@@ -51,6 +51,17 @@ const Footer: React.FC = () => {
                 Instagram
               </a>
               <a 
+                href="https://wa.me/905431225532" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="social-button whatsapp"
+              >
+                <span className="social-icon">
+                  <img src="/images/WhatsApp_logo.png" alt="WhatsApp" style={{width: 20, height: 20, objectFit: 'contain'}} />
+                </span>
+                WhatsApp
+              </a>
+              <a 
                 href="https://www.youtube.com/@aise.demirci" 
                 target="_blank" 
                 rel="noopener noreferrer"
