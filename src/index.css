@@ -1,10 +1,18 @@
 body {
   margin: 0;
+  padding-top: 30px; /* Header için boşluk */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobilde header yüksekliğine göre padding ayarı */
+@media (max-width: 768px) {
+  body {
+    padding-top: 25px;
+  }
 }
 
 code {

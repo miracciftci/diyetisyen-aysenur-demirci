@@ -168,8 +168,12 @@
     padding-top: 1.5rem;
     margin-top: 1rem;
   }
+  .video-advantages {
+    margin-top: 10px;
+  }
   .video-advantages h2 {
     font-size: 1.4rem;
+    margin-top: 15px;
   }
   .video-advantages li {
     padding: 0.6rem 0.7rem;

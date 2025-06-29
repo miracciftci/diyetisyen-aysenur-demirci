@@ -11,7 +11,12 @@ const Header: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 40; // Header yüksekliği
+      const elementPosition = element.offsetTop - headerHeight - 20; // 20px ekstra boşluk
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMenuOpen(false);
   };
@@ -19,7 +24,12 @@ const Header: React.FC = () => {
   const scrollToContactForm = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 40; // Header yüksekliği
+      const elementPosition = contactSection.offsetTop - headerHeight - 20; // 20px ekstra boşluk
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMenuOpen(false);
   };
@@ -27,7 +37,12 @@ const Header: React.FC = () => {
   const scrollToNedenBen = () => {
     const section = document.getElementById('nedenben');
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 40; // Header yüksekliği - hizmetlerim kısmının görünmemesi için artırıldı
+      const elementPosition = section.offsetTop - headerHeight - 20; // 20px ekstra boşluk
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMenuOpen(false);
   };
